@@ -71,12 +71,45 @@ public class Radio {
         this.currentVolume = currentVolume;
     }
 
+
+    public int getRadiostationNumberMin() {
+        return radiostationNumberMin;
+    }
+
+    public void setRadiostationNumberMin(int radiostationNumberMin) {
+        this.radiostationNumberMin = radiostationNumberMin;
+    }
+
+    public int getRadiostationNumberMax() {
+        return radiostationNumberMax;
+    }
+
+    public void setRadiostationNumberMax(int radiostationNumberMax) {
+        this.radiostationNumberMax = radiostationNumberMax;
+    }
+
     public int getCurrentRadiostationNumber() {
         return currentRadiostationNumber;
     }
 
     public void setCurrentRadiostationNumber(int currentRadiostationNumber) {
         this.currentRadiostationNumber = currentRadiostationNumber;
+    }
+
+    public int getVolumeMax() {
+        return volumeMax;
+    }
+
+    public void setVolumeMax(int volumeMax) {
+        this.volumeMax = volumeMax;
+    }
+
+    public int getVolumeMin() {
+        return volumeMin;
+    }
+
+    public void setVolumeMin(int volumeMin) {
+        this.volumeMin = volumeMin;
     }
 
     public int getCurrentVolume() {

@@ -7,6 +7,29 @@ import static org.junit.jupiter.api.Assertions.*;
 class RadioTest {
     Radio radio = new Radio();
 
+    // Суть падающих тестов - чтобы можно было создать объект с количеством станций более 10 и дефолтным значением текущей радиостанции
+
+    @Test
+    public void shouldGetRadiostationNumberMax() {
+        assertEquals(20, radio.getRadiostationNumberMax());
+    }
+
+    @Test
+    public void shouldGetCurrentRadiostation() {
+        assertEquals(10, radio.getCurrentRadiostationNumber());
+    }
+// Суть падающих тестов - чтобы можно было создать объект с максимальным уровнем громкости 100 и текущим значением по умолчанию 50
+
+    @Test
+    public void shouldGetVolumeMax() {
+        assertEquals(100, radio.getVolumeMax());
+    }
+
+    @Test
+    public void shouldGetCurrentVolume() {
+        assertEquals(50, radio.getCurrentVolume());
+    }
+    //
 
     @Test
     public void shouldNextRadiostation1() {
